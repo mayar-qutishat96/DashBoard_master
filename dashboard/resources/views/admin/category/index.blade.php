@@ -55,7 +55,7 @@
                 {{ $categories->links() }}
             </div>
         </div>
-    </div
-
+    </div>
+</div> <!-- Missing closing div fixed -->
 
 @endsection

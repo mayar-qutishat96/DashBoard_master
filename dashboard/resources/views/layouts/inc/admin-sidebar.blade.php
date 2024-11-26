@@ -20,18 +20,7 @@
                     </nav>
                 </div>
 
-                <!-- Posts Section -->
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePosts" aria-expanded="false" aria-controls="collapsePosts">
-                    <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Posts
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                </a>
-                <div class="collapse" id="collapsePosts" aria-labelledby="headingPosts" data-bs-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="{{url('admin/add-post')}}">Add Post</a>
-                        <a class="nav-link" href="{{url('admin/posts')}}">View Posts</a>
-                    </nav>
-                </div>
+            
 
                 <!-- Customer Section -->
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCustomer" aria-expanded="false" aria-controls="collapseCustomer">
@@ -87,12 +76,12 @@
                 <!-- Messages Section -->
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseMessages" aria-expanded="false" aria-controls="collapseMessages">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Messages
+                    Contact_us
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
                 <div class="collapse" id="collapseMessages" aria-labelledby="headingMessages" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="{{url('admin/message')}}">View Messages</a>
+                        <a class="nav-link" href="{{url('admin/message')}}">View contact_us</a>
                     </nav>
                 </div>
 
@@ -131,10 +120,5 @@
                 </a>
 
 
-
-        <div class="sb-sidenav-footer">
-            <div class="small">Logged in as:</div>
-            Start Bootstrap
-        </div>
     </nav>
 </div>

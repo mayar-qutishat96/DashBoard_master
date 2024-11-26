@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DashboardController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -98,6 +98,9 @@ Route::get('delete-testimonial/{testimonial_id}', [App\Http\Controllers\Admin\Te
 Route::get('restore-testimonial/{testimonial_id}', [App\Http\Controllers\Admin\TestimonialController ::class, 'restore']);
 
 
+
+
+Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 
 
 

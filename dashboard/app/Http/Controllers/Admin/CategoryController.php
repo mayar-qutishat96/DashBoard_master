@@ -76,9 +76,7 @@ class CategoryController extends Controller
     {
         $category = Category::findOrFail($category_id);
 
-        if ($category->image && File::exists('uploads/category/' . $category->image)) {
-            File::delete('uploads/category/' . $category->image);
-        }
+        
 
         $category->delete(); // Perform soft delete
         return redirect('admin/category')->with('message', 'Category deleted successfully.');

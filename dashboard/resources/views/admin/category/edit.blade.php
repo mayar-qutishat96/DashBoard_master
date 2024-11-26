@@ -40,19 +40,7 @@
                     <input type="file" id="image" name="image" class="form-control">
                 </div>
                 
-                <h6>SEO Tags</h6>
-                <div class="mb-3">
-                    <label for="meta_title">Meta Title</label>
-                    <input type="text" id="meta_title" value="{{ $category->meta_title}}" name="meta_title" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="meta_description">Meta Description</label>
-                    <textarea id="meta_description" name="meta_description" rows="3" class="form-control">{{ $category->meta_description}}</textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="meta_keyword">Meta Keyword</label>
-                    <textarea id="meta_keyword" name="meta_keyword" rows="3" class="form-control">{{ $category->meta_keyword}}</textarea>
-                </div>
+               
 
                 <h6>Status Mode</h6>
                 <div class="row">

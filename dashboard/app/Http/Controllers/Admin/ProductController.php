@@ -93,10 +93,17 @@ class ProductController extends Controller
 
     public function restore($product_id)
     {
-        $product = Product::onlyTrashed()->findOrFail($product_id);
+        $product = Product::withTrashed()->findOrFail($product_id);
         $product->restore(); // Restore soft-deleted product
 
         return redirect('admin/product')->with('message', 'Product restored successfully.');
     }
+    private function uploadImage($file)
+    {
+        $filename = time() . '.' . $file->getClientOriginalExtension();
+        $file->move('uploads/product/', $filename);
+        return $filename;
+    }
+
 }
 

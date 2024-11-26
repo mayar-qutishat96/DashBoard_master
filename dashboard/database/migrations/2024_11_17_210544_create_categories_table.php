@@ -18,9 +18,6 @@ return new class extends Migration
             $table->mediumText('description');
             $table->string('image');
 
-            $table->string('meta_title');
-            $table->text('meta_description');
-            $table->text('meta_keyword');
 
             $table->tinyinteger('navbar_status')->default('0');
             $table->tinyinteger('status')->default('0');

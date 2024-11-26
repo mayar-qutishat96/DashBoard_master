@@ -15,8 +15,7 @@ class Category extends Model
     protected $dates = ['deleted_at']; // Optional, defines the soft delete column
     protected $table ='categories';
     protected $fillable =[
-    'name','slug','description','image','meta_title','meta_description',
-    'meta_keyword','navbar_status','status','created_by'
+    'name','slug','description','image','navbar_status','status','created_by'
 
 
 
